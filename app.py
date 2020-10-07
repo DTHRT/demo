@@ -47,6 +47,11 @@ def create_article():
 def posts():
  articles = Article.query.order_by(Article.date.desc()).all()
  return render_template("posts.html", articles=articles)
+
+
+@app.route('/about')
+def about():
+ return render_template("about.html")
  
 
 @app.route('/posts/<int:id>')

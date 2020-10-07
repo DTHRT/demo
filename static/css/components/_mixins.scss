@@ -1,0 +1,9 @@
+@mixin reset__styles {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+@mixin body__background {
+ background: white;
+}
